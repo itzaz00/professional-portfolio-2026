@@ -10,8 +10,11 @@
 <body>
     <div class="glow-bg"></div>
     <div class="container">
-        <header>
+        <header class="header-main">
             <p class="logo">My Web Portfolio</p>
+            <div class="status-indicator">
+                <span class="dot"></span> Active
+            </div>
         </header>
 
         <main class="bento-grid">
@@ -57,6 +60,15 @@
                     <li>🎮 Call of Duty (Video Games)</li>
                     <li>🎬 Anime Editor (Editing)</li>
                 </ul>
+            </section>
+
+            <section class="card contact">
+                <h3>Get In Touch</h3>
+                <form id="contact-form">
+                    <input type="email" placeholder="Email Address" required>
+                    <textarea placeholder="Your Message" rows="3" required></textarea>
+                    <button type="submit" class="btn primary full-width">Send Message</button>
+                </form>
             </section>
         </main>
     </div>

@@ -1,6 +1,7 @@
 :root { 
     --bg: #050505; 
     --accent: #bb86fc; 
+    --green: #00ff85;
     --card-bg: rgba(255, 255, 255, 0.03); 
     --border: rgba(255, 255, 255, 0.08); 
 }
@@ -24,9 +25,35 @@ body {
 
 .container { width: 100%; max-width: 420px; }
 
-header { padding: 10px 0 20px 0; }
-.logo { font-weight: 700; opacity: 0.8; font-size: 0.9rem; }
+/* Status Indicator Styles */
+.header-main { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding-bottom: 20px; 
+}
+.status-indicator {
+    background: rgba(0, 255, 133, 0.1);
+    color: var(--green);
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 5px 12px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border: 1px solid rgba(0, 255, 133, 0.2);
+}
+.dot {
+    width: 6px;
+    height: 6px;
+    background: var(--green);
+    border-radius: 50%;
+    box-shadow: 0 0 8px var(--green);
+}
 
+.logo { font-weight: 700; opacity: 0.8; font-size: 0.9rem; margin: 0; }
 .bento-grid { display: flex; flex-direction: column; gap: 16px; }
 
 .card { 
@@ -48,29 +75,31 @@ header { padding: 10px 0 20px 0; }
     display: inline-block; 
 }
 
-/* Reduced font size and forced single line */
-.main-name { 
-    font-size: 1.35rem; 
-    margin: 15px 0; 
-    letter-spacing: -0.5px; 
-    white-space: nowrap; 
-}
-
-h3 { color: var(--accent); font-size: 0.85rem; text-transform: uppercase; margin-bottom: 12px; letter-spacing: 1px; }
+.main-name { font-size: 1.35rem; margin: 15px 0; letter-spacing: -0.5px; white-space: nowrap; }
+h3 { color: var(--accent); font-size: 0.85rem; text-transform: uppercase; margin-bottom: 12px; }
 
 .bio { color: #fff; font-size: 0.9rem; line-height: 1.5; margin-bottom: 15px; }
 .academic-info { color: #a0a0a0; font-size: 0.8rem; border-top: 1px solid var(--border); padding-top: 15px; text-align: left; }
-.academic-info strong { color: #fff; }
 
 .tags { display: flex; gap: 8px; flex-wrap: wrap; }
 .tags span { background: rgba(255,255,255,0.05); padding: 6px 12px; border-radius: 10px; font-size: 0.75rem; border: 1px solid var(--border); }
 
 .category { font-size: 0.65rem; color: var(--accent); font-weight: 700; display: block; margin-bottom: 5px; }
-.project h3 { font-size: 0.95rem; }
-.project p { color: #a0a0a0; font-size: 0.8rem; line-height: 1.4; }
-
 .hobby-list { list-style: none; padding: 0; }
 .hobby-list li { color: #a0a0a0; font-size: 0.8rem; padding: 4px 0; }
+
+/* Form Styling */
+#contact-form { display: flex; flex-direction: column; gap: 10px; margin-top: 5px; }
+input, textarea {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 12px;
+    color: #fff;
+    font-family: inherit;
+    font-size: 0.85rem;
+}
+.full-width { width: 100%; cursor: pointer; }
 
 .links { display: flex; gap: 10px; justify-content: center; margin-top: 20px; }
 .btn { 
@@ -80,7 +109,5 @@ h3 { color: var(--accent); font-size: 0.85rem; text-transform: uppercase; margin
     padding: 10px 18px; 
     border-radius: 12px; 
     font-size: 0.8rem; 
-    transition: 0.2s;
 }
 .btn.primary { background: #fff; color: #000; font-weight: bold; border: none; }
-.btn:hover { transform: translateY(-2px); opacity: 0.9; }
