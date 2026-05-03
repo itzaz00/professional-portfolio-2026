@@ -3,47 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arvinzenth G. Dideles | Portfolio</title>
+    <title>Arvinzenth G. Dideles | BSIT-3</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="glow-bg"></div>
-    <div class="container">
-        <header>
-            <p class="logo">My Web Portfolio</p>
-            <div class="status-dot"><span></span> Active</div>
+    <div class="bg-glow"></div>
+    
+    <main class="container">
+        <header class="glass-card profile-header">
+            <h1>Arvinzenth G. Dideles</h1>
+            <p class="tagline">BSIT-3 @ Central Philippine University</p>
+            <p class="location">📍 Iloilo City, Philippines</p>
         </header>
-        <main class="bento-grid">
-            <section class="card profile">
-                <div class="badge">BSIT-3 Student</div>
-                <h1>Arvinzenth G. Dideles</h1>
-                <p>Full-Stack Developer & aspiring Network Engineer in Iloilo.</p>
-                <div class="links">
-                    <a href="https://github.com/itzaz00" class="btn">GitHub</a>
-                    <a href="https://linkedin.com/in/arvinzenth-dideles" class="btn primary">LinkedIn</a>
-                </div>
-            </section>
 
-            <section class="card project">
-                <span class="category">Networking</span>
-                <h3>CCNA & Routing</h3>
-                <p>Configuring Cisco switches and routers, packet tracing, and network security.</p>
-            </section>
+        <section class="glass-card">
+            <h3>Technical Stack</h3>
+            <div class="tech-grid">
+                <div class="tech-item">Flutter & Firebase</div>
+                <div class="tech-item">C# & Arduino</div>
+                <div class="tech-item">Python & Tkinter</div>
+                <div class="tech-item">UI/UX Redesign</div>
+            </div>
+        </section>
 
-            <section class="card project">
-                <span class="category">IoT</span>
-                <h3>Urban Drainage Analytics</h3>
-                <p>Interactive telemetry for Iloilo City's Sponge Zones.</p>
-            </section>
+        <section class="glass-card">
+            <h3>Active Project</h3>
+            <div class="project-box">
+                <h4>Urban Drainage Analytics</h4>
+                <p>Telemetry system for Iloilo City's Sponge Zones using Arduino and C# visualization.</p>
+            </div>
+        </section>
 
-            <section class="card interests">
-                <h3>Vibes & Hobbies</h3>
-                <div class="interest-tags">
-                    <span>Dark R&B</span> <span>LA Lakers</span> <span>Forza Horizon</span> <span>Street Style</span>
-                </div>
-            </section>
-        </main>
-    </div>
+        <section class="glass-card">
+            <h3>Creative Interests</h3>
+            <ul class="hobby-list">
+                <li>🎵 Dark R&B / Melodic Rap (The Weeknd, Drake)</li>
+                <li>🏀 NBA & OKC Thunder Fan Culture</li>
+                <li>🏎️ Forza Horizon & Mustang Classics</li>
+                <li>📸 Street-style Photography & Photo Editing</li>
+            </ul>
+        </section>
+
+        <section class="glass-card">
+            <h3>Get In Touch</h3>
+            <form id="contact-form">
+                <input type="email" placeholder="Email Address" required>
+                <textarea placeholder="Message" rows="3" required></textarea>
+                <button type="submit" id="send-btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
