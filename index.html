@@ -5,27 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arvinzenth G. Dideles | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="glow-bg"></div>
     <div class="container">
         <header class="header-main">
-            <p class="logo">My Web Portfolio</p>
+            <p class="logo">AD.Dev</p>
             <div class="status-indicator">
                 <span class="dot"></span> Active
             </div>
         </header>
 
         <main class="bento-grid">
-            <section class="card profile">
-                <div class="badge">Age: 21</div>
+            <section class="card profile-hero">
+                <div class="badge-row">
+                    <span class="badge">Age: 21</span>
+                    <span class="badge secondary">Philippines</span>
+                </div>
                 <h1 class="main-name">Arvinzenth G. Dideles</h1>
-                <p class="bio">I am a passionate young man with an ambition of becoming a network administrator.</p>
+                <p class="bio">A passionate young man with an ambition of becoming a <strong>Network Administrator</strong>, specializing in infrastructure and IoT solutions.</p>
                 
-                <div class="academic-info">
-                    <p><strong>College Course:</strong> BSIT</p>
-                    <p><strong>School:</strong> Central Philippine University</p>
+                <div class="academic-block">
+                    <div class="info-row">
+                        <span class="label">Course</span>
+                        <span class="val">BSIT</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="label">School</span>
+                        <span class="val">Central Philippine University</span>
+                    </div>
                 </div>
 
                 <div class="links">
@@ -34,39 +43,50 @@
                 </div>
             </section>
 
-            <section class="card stack">
-                <h3>Technical Stack</h3>
-                <div class="tags">
-                    <span>C#</span> <span>MySQL</span> <span>Python</span>
+            <section class="card skills-grid">
+                <h3>Technical Proficiency</h3>
+                <div class="skill-chips">
+                    <span class="chip">Python</span>
+                    <span class="chip">Flutter</span>
+                    <span class="chip">C#</span>
+                    <span class="chip">MySQL</span>
+                    <span class="chip">Web Dev</span>
+                    <span class="chip">Arduino</span>
+                    <span class="chip">Firebase</span>
                 </div>
             </section>
 
-            <section class="card certs">
-                <h3>Certifications</h3>
-                <p>Completed CCNA 1, 2, and 3</p>
+            <section class="card cert-card">
+                <div class="cert-icon">🔒</div>
+                <div>
+                    <h3>Cisco Networking</h3>
+                    <p>CCNA 1, 2, and 3 Certified</p>
+                </div>
             </section>
 
-            <section class="card project">
-                <span class="category">Active Project</span>
-                <h3>IoT-Based Camera Module for Flood Monitoring</h3>
-                <p>An intelligent monitoring system utilizing YOLO for real-time object detection and flood analysis.</p>
+            <section class="card project-card">
+                <div class="project-header">
+                    <span class="category">Current Research</span>
+                    <h3>IoT Camera Module for Flood Monitoring</h3>
+                </div>
+                <p>Developing an intelligent early-warning system utilizing <strong>YOLO</strong> for real-time object detection and data analysis.</p>
             </section>
 
-            <section class="card hobbies">
-                <h3>Interests</h3>
-                <ul class="hobby-list">
-                    <li>🏀 OKC Thunder (Basketball)</li>
-                    <li>🎵 Dark R&B (Music)</li>
-                    <li>🎮 Call of Duty (Video Games)</li>
-                    <li>🎬 Anime Editor (Editing)</li>
-                </ul>
+            <section class="card lifestyle-grid">
+                <h3>Interests & Lifestyle</h3>
+                <div class="hobby-items">
+                    <div class="hobby">🏀 OKC Thunder</div>
+                    <div class="hobby">🎵 Dark R&B</div>
+                    <div class="hobby">🎮 Call of Duty</div>
+                    <div class="hobby">🎬 Anime Editor</div>
+                </div>
             </section>
 
-            <section class="card contact">
-                <h3>Get In Touch</h3>
+            <section class="card contact-card">
+                <h3>Connect</h3>
                 <form id="contact-form">
                     <input type="email" placeholder="Email Address" required>
-                    <textarea placeholder="Your Message" rows="3" required></textarea>
+                    <textarea placeholder="Message..." rows="2" required></textarea>
                     <button type="submit" class="btn primary full-width">Send Message</button>
                 </form>
             </section>
