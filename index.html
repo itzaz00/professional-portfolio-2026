@@ -3,81 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional Portfolio of Arvinzenth G. Dideles - BSIT Student and Aspiring Network Administrator.">
-    <title>Arvinzenth G. Dideles | Professional Portfolio</title>
+    <meta name="description" content="Professional Portfolio of Arvinzenth G. Dideles - BSIT @ CPU. Aspiring Network Administrator.">
+    <title>Arvinzenth G. Dideles | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="glow-bg" aria-hidden="true"></div>
-    
-    <main class="container">
-        <header class="card profile-hero">
-            <div class="header-top">
-                <span class="badge">Available for Work</span>
-                <div class="status-indicator"><span class="dot"></span> Active</div>
-            </div>
-            <h1>Arvinzenth G. Dideles</h1>
-            <p class="hero-statement">
-                I am a <strong>Network & Systems Developer</strong> specializing in IoT integration and secure infrastructure. 
-                I bridge the gap between hardware telemetry and modern web visualization.
-            </p>
-            <div class="academic-meta">
-                <span>College Course: <strong>BSIT</strong></span>
-                <span>School: <strong>Central Philippine University</strong></span>
+    <div class="glow-bg"></div>
+    <div class="container">
+        <header class="header-main">
+            <p class="logo">AD.Dev</p>
+            <div class="status-indicator">
+                <span class="dot"></span> Active
             </div>
         </header>
 
-        <section class="card">
-            <h2 class="section-title">Featured Project</h2>
-            <div class="project-item">
-                <h3>IoT Camera Module for Flood Monitoring</h3>
-                <div class="tech-tags">
-                    <span>Python</span> <span>YOLO</span> <span>IoT</span> <span>Arduino</span>
+        <main class="bento-grid">
+            <section class="card profile-hero">
+                <div class="badge-row">
+                    <span class="badge">Age: 21</span>
+                    <span class="badge secondary">Philippines</span>
                 </div>
-                <div class="problem-solution">
-                    <p><strong>Problem:</strong> Lack of real-time visual verification in traditional water-level sensors leads to false flood alarms.</p>
-                    <p><strong>Solution:</strong> Developed a YOLO-based computer vision module that confirms flood levels via real-time object detection.</p>
+                <h1 class="main-name">Arvinzenth G. Dideles</h1>
+                <p class="bio">A passionate young man with an ambition of becoming a <strong>Network Administrator</strong>, specializing in infrastructure and IoT solutions.</p>
+                
+                <div class="academic-block">
+                    <div class="info-row">
+                        <span class="label">College Course</span>
+                        <span class="val">BSIT</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="label">School</span>
+                        <span class="val">Central Philippine University</span>
+                    </div>
                 </div>
-            </div>
-        </section>
 
-        <section class="card">
-            <h2 class="section-title">Technical Expertise</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h4>Core Languages</h4>
-                    <p>Python, C#, MySQL</p>
+                <div class="links">
+                    <a href="https://github.com/itzaz00" target="_blank" class="btn">GitHub</a>
+                    <a href="https://linkedin.com/in/arvinzenth-dideles" target="_blank" class="btn primary">LinkedIn</a>
                 </div>
-                <div class="skill-category">
-                    <h4>Certifications</h4>
-                    <p>Cisco CCNA (1, 2, 3)</p>
-                </div>
-                <div class="skill-category">
-                    <h4>Frameworks</h4>
-                    <p>Flutter, Web Development</p>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="card">
-            <h2 class="section-title">Contact</h2>
-            <form action="https://formspree.io/f/your-id-here" method="POST" class="contact-form">
-                <input type="email" name="email" placeholder="Professional Email Address" required>
-                <textarea name="message" placeholder="Project Inquiry or Networking Message" rows="3" required></textarea>
-                <button type="submit" class="btn-submit">Deploy Message</button>
-            </form>
-        </section>
+            <section class="card skills-grid">
+                <h3>Technical Proficiency</h3>
+                <div class="skill-chips">
+                    <span class="chip">Python</span>
+                    <span class="chip">Flutter</span>
+                    <span class="chip">C#</span>
+                    <span class="chip">MySQL</span>
+                    <span class="chip">Web Dev</span>
+                    <span class="chip">Arduino</span>
+                    <span class="chip">Firebase</span>
+                </div>
+            </section>
 
-        <footer class="footer">
-            <div class="social-links">
-                <a href="https://github.com/itzaz00" target="_blank">GitHub</a>
-                <a href="https://linkedin.com/in/arvinzenth-dideles" target="_blank">LinkedIn</a>
-            </div>
-            <p>© 2026 Arvinzenth G. Dideles</p>
-        </footer>
-    </main>
+            <section class="card cert-card">
+                <div class="cert-icon">🔒</div>
+                <div>
+                    <h3>Cisco Networking</h3>
+                    <p>CCNA 1, 2, and 3 Certified</p>
+                </div>
+            </section>
+
+            <section class="card project-card">
+                <div class="project-header">
+                    <span class="category">Current Research</span>
+                    <h3>IoT Camera Module for Flood Monitoring</h3>
+                </div>
+                <p><strong>Problem:</strong> Lack of real-time visual verification in water-level sensors.<br>
+                <strong>Solution:</strong> Developed an early-warning system utilizing <strong>YOLO</strong> for real-time object detection and data analysis.</p>
+            </section>
+
+            <section class="card lifestyle-grid">
+                <h3>Interests & Lifestyle</h3>
+                <div class="hobby-items">
+                    <div class="hobby">🏀 OKC Thunder</div>
+                    <div class="hobby">🎵 Dark R&B</div>
+                    <div class="hobby">🎮 Call of Duty</div>
+                    <div class="hobby">🎬 Anime Editor</div>
+                </div>
+            </section>
+
+            <section class="card contact-card">
+                <h3>Connect</h3>
+                <form id="contact-form">
+                    <input type="email" placeholder="Email Address" required>
+                    <textarea placeholder="Message..." rows="2" required></textarea>
+                    <button type="submit" class="btn primary full-width">Send Message</button>
+                </form>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
