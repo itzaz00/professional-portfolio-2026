@@ -5,78 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arvinzenth G. Dideles | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="bg-glow"></div>
-    
-    <main class="container">
-        <header class="glass-card profile-header">
-            <div class="badge">Aspiring Network Administrator</div>
-            <h1>Arvinzenth G. Dideles</h1>
-            <div class="bio">
-                <p>I am a passionate young man with a clear ambition of becoming a Network Administrator, dedicated to mastering infrastructure and connectivity.</p>
-            </div>
+    <div class="glow-bg"></div>
+    <div class="container">
+        <header>
+            <p class="logo">My Web Portfolio</p>
         </header>
 
-        <section class="glass-card">
-            <h3>Academic Profile</h3>
-            <div class="info-list">
-                <div class="info-item"><span>Age:</span> 21</div>
-                <div class="info-item"><span>College Course:</span> BSIT</div>
-                <div class="info-item"><span>School:</span> Central Philippine University</div>
-            </div>
-        </section>
-
-        <section class="glass-card">
-            <h3>Technical Stack</h3>
-            <div class="tech-grid">
-                <div class="tech-item"><strong>C#</strong> & Arduino</div>
-                <div class="tech-item"><strong>MySQL</strong> Database</div>
-                <div class="tech-item"><strong>Python</strong></div>
-                <div class="tech-item"><strong>Flutter</strong> Mobile</div>
-            </div>
-        </section>
-
-        <section class="glass-card">
-            <h3>Certifications</h3>
-            <div class="cert-box">
-                <div class="cert-item">
-                    <span class="cert-check">✓</span>
-                    <div>
-                        <h4>Cisco Certified Network Associate</h4>
-                        <p>Completed CCNA 1, 2, and 3</p>
-                    </div>
+        <main class="bento-grid">
+            <section class="card profile">
+                <div class="badge">Age: 21</div>
+                <h1>Arvinzenth G. Dideles</h1>
+                <p class="bio">I am a passionate young man with an ambition of becoming a network administrator.</p>
+                
+                <div class="academic-info">
+                    <p><strong>College Course:</strong> BSIT</p>
+                    <p><strong>School:</strong> Central Philippine University</p>
                 </div>
-            </div>
-        </section>
 
-        <section class="glass-card">
-            <h3>Active Project</h3>
-            <div class="project-box">
-                <h4>IoT-Based Camera Module</h4>
-                <p>Flood monitoring system utilizing real-time visual data and IoT integration.</p>
-            </div>
-        </section>
+                <div class="links">
+                    <a href="https://github.com/itzaz00" class="btn">GitHub</a>
+                    <a href="https://linkedin.com/in/arvinzenth-dideles" class="btn primary">LinkedIn</a>
+                </div>
+            </section>
 
-        <section class="glass-card">
-            <h3>Interests</h3>
-            <div class="interest-grid">
-                <span>🎵 Dark R&B</span>
-                <span>🏀 OKC Thunder</span>
-                <span>🏎️ Mustangs</span>
-                <span>📸 Street Photography</span>
-            </div>
-        </section>
+            <section class="card stack">
+                <h3>Technical Stack</h3>
+                <div class="tags">
+                    <span>C#</span> <span>MySQL</span> <span>Python</span>
+                </div>
+            </section>
 
-        <section class="glass-card">
-            <h3>Get In Touch</h3>
-            <form id="contact-form">
-                <input type="email" placeholder="Email Address" required>
-                <textarea placeholder="Your Message" rows="3" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
-    </main>
+            <section class="card certs">
+                <h3>Certifications</h3>
+                <p>Completed CCNA 1, 2, and 3</p>
+            </section>
+
+            <section class="card project">
+                <span class="category">Active Project</span>
+                <h3>IoT-Based Camera Module for Flood Monitoring</h3>
+                <p>An intelligent monitoring system utilizing YOLO for real-time object detection and flood analysis.</p>
+            </section>
+
+            <section class="card hobbies">
+                <h3>Interests</h3>
+                <ul class="hobby-list">
+                    <li>🏀 OKC Thunder (Basketball)</li>
+                    <li>🎵 Dark R&B (Music)</li>
+                    <li>🎮 Call of Duty (Video Games)</li>
+                    <li>🎬 Anime Editor (Editing)</li>
+                </ul>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
